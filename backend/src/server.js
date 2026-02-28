@@ -8,7 +8,7 @@ const app = express();
 
 const __dirname = path.resolve();
 
-pp.use(clerkMiddleware());
+app.use(clerkMiddleware());
 
 app.get("/api/health", (req, res) => {
     res.status(200).json({ message: "conectado" });
